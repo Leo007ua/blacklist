@@ -32,7 +32,7 @@ function ContactForm({ formAddContact }) {
     <>
       <StyledForm onSubmit={handleOnSubmit}>
         <label>
-          <span>Name</span>
+          <span>Name:</span>
           <input
             value={nameContact}
             type="text"
@@ -41,10 +41,11 @@ function ContactForm({ formAddContact }) {
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
             onChange={handleOnChange}
+            placeholder="Your name"
           />
         </label>
         <label>
-          <span>Number</span>
+          <span>Number:</span>
           <input
             value={number}
             type="tel"
@@ -53,6 +54,7 @@ function ContactForm({ formAddContact }) {
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
             onChange={handleOnChange}
+            placeholder="Your number"
           />
         </label>
 

@@ -35,11 +35,11 @@ export const Register = () => {
       <h3>Registration</h3>
       <FormStyled onSubmit={handleSubmit}>
         <span>Name:</span>
-        <input type="text" name="name" required />
+        <input type="text" name="name"  placeholder="Your name" required />
         <span>Email:</span>
-        <input type="email" name="email" required />
+        <input type="email" name="email" placeholder="Your email" required />
         <span>Password:</span>
-        <input type="password" name="password" minLength={6} required />
+        <input type="password" name="password" minLength={7} placeholder="Your password" required />
         <button type="submit">Register</button>
       </FormStyled>
     </FormWrap>

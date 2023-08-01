@@ -4,13 +4,13 @@ import styled from 'styled-components';
 export const StyledLink = styled(NavLink)`
   text-decoration: none;
   font-size: 20px;
-  color: navy;
+  color: blue;
   display: block;
   padding: 10px;
   margin-left: 20px;
 
   &.active {
-    color: orangered;
+    color: aquamarine;
   }
 `;
 export const NavStyled = styled.nav`

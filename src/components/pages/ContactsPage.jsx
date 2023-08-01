@@ -69,5 +69,5 @@ export const ContactsPage = () => {
   );
 };
 
-//export default withAuthRedirect(ContactsPage);
+
 export default ContactsPage;

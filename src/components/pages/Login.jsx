@@ -23,9 +23,9 @@ export const Login = () => {
       <h3>Login</h3>
       <FormStyled onSubmit={handleOnSubmit}>
         <span>Email:</span>
-        <input type="email" name="email" required />
+        <input type="email" name="email" placeholder="Your e-mail" required />
         <span>Password:</span>
-        <input type="password" name="password" required />
+        <input type="password" name="password" placeholder="Your password" required />
         <button type="submit">Log In</button>
       </FormStyled>
     </FormWrap>

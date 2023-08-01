@@ -8,7 +8,8 @@ const Filter = ({ value, handleOnChangeFilter }) => {
       <InputStyled
        type="text"
        value={value}
-       onChange={handleOnChangeFilter} />
+       onChange={handleOnChangeFilter}
+       placeholder="Search name" />
     </>
   );
 };
