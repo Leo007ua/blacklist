@@ -7,7 +7,6 @@ import { NavLayout } from './Navigation/NavLayout';
 import { getCurrentThunk } from 'redux/Thunks/authThunk';
 import { PublicRoute } from 'Guards/PublicRoute';
 import { PrivateRoute } from 'Guards/PrivateRoute';
-import { Toaster } from 'react-hot-toast';
 
 const Home = lazy(() => import('../pages/Home/Home'));
 const Register = lazy(() => import('../pages/Register/Register'));
@@ -22,8 +21,7 @@ export default function App() {
   },[dispatch])
 
   return (   
-      <Suspense fallback={<Loader />}> 
-       <Toaster position="top-right"/>       
+      <Suspense fallback={<Loader />}>        
         <Routes>
           <Route path="/" element={<NavLayout />}>
             <Route index element={<PublicRoute><Home /></PublicRoute>} />
