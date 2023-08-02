@@ -12,9 +12,9 @@ export const StyledFooter = styled.footer`
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 40px;
+    border: 2px solid white;
     background-color: aquamarine;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
 `;
 export const FooterText = styled.p`
     font-weight: 500;
@@ -27,6 +27,6 @@ export const FooterLink = styled.a`
     color: black;
 
     &:hover {
-        color: white;
+        color: blueviolet;
     }
 `;
