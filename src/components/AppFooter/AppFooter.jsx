@@ -1,4 +1,6 @@
+import { iconsSize } from "components/Icon/iconSize";
 import { StyledFooter, FooterText, FooterLink } from "./AppFooterStyled";
+import { BsGithub } from "react-icons/bs";
 
 export function AppFooter() {
     return (
@@ -13,7 +15,7 @@ export function AppFooter() {
                 title="Github"
                 aria-label="Link to Github profile"
             >
-                Leo
+                Leo <BsGithub size={iconsSize.small} />
             </FooterLink>
         </StyledFooter>
     );

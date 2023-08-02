@@ -1,7 +1,10 @@
 import React from 'react';
+
+import { HiMiniArrowDownOnSquare} from "react-icons/hi2";
 import { FormStyled, FormWrap } from './RegisterStyled';
 import { useDispatch } from 'react-redux';
 import { logInThunk } from 'redux/Thunks/authThunk';
+import { iconsSize } from 'components/Icon/iconSize';
 
 export const Login = () => {
   const dispatch = useDispatch();
@@ -26,10 +29,11 @@ export const Login = () => {
         <input type="email" name="email" placeholder="Your e-mail" required />
         <span>Password:</span>
         <input type="password" name="password" placeholder="Your password" required />
-        <button type="submit">Log In</button>
+        <button type="submit"><HiMiniArrowDownOnSquare size={iconsSize.medium} /></button>
       </FormStyled>
     </FormWrap>
   );
 };
 
 export default Login;
+

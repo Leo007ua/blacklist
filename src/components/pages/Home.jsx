@@ -6,7 +6,7 @@ import { iconsSize } from 'components/Icon/iconSize';
 export const Home = () => {
   return (
     <HomeStyled>
-      <h2>Welcome to phonebook</h2>
+      <h2>Welcome to blacklist</h2>
       <HiBookOpen size={iconsSize.large} />
     </HomeStyled>
   );

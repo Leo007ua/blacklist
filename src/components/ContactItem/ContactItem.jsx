@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
+import { BsArchive } from "react-icons/bs";
 import { ContactDivStyled } from './ContactItemStyled'
+import { iconsSize } from 'components/Icon/iconSize';
 
 
 const ContactItem = ({id, name, number, onRemoveContact})=>{
@@ -8,7 +10,7 @@ const ContactItem = ({id, name, number, onRemoveContact})=>{
             <p>
               {name}: {number}
             </p>
-            <button type='button' onClick={()=>onRemoveContact(id)}>Delete</button>
+            <button type='button' onClick={()=>onRemoveContact(id)}><BsArchive size={iconsSize.small}/></button>
           </ContactDivStyled>
     )
 }

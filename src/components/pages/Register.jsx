@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { selectUserName } from 'redux/selectors';
 
+import { HiMiniArrowDownOnSquare} from "react-icons/hi2";
+import { iconsSize } from 'components/Icon/iconSize';
+
 export const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -40,7 +43,7 @@ export const Register = () => {
         <input type="email" name="email" placeholder="Your email" required />
         <span>Password:</span>
         <input type="password" name="password" minLength={7} placeholder="Your password" required />
-        <button type="submit">Register</button>
+        <button type="submit"><HiMiniArrowDownOnSquare size={iconsSize.medium} /></button>
       </FormStyled>
     </FormWrap>
   );

@@ -51,12 +51,12 @@ export const ContactsPage = () => {
 
   return (
     <Section>
-      <h1>Phonebook</h1>
+      <h1>Blacklist</h1>
       <ContactForm formAddContact={formAddContact} contactsArr={contacts} />
       <h2>Contacts</h2>
       <Filter value={filtered} handleOnChangeFilter={handleOnChangeFilter} />
       {isLoading && <Loader />}
-      {error && <>Oops... Error: {error}</>}
+      {error && <>Oops something went wrong... Error: {error}</>}
       <Contacts
         filteredContact={filteredContact}
         onRemoveContact={contactId => {

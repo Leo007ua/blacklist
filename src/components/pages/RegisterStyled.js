@@ -26,7 +26,7 @@ export const FormStyled = styled.form`
     }
   }
   button {
-    width: 150px;
+    width: 100px;
     cursor: pointer;
     padding: 5px;
     font-size: 14px;
