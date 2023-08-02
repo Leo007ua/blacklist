@@ -9,10 +9,10 @@ import { PublicRoute } from 'Guards/PublicRoute';
 import { PrivateRoute } from 'Guards/PrivateRoute';
 import { Toaster } from 'react-hot-toast';
 
-const Home = lazy(() => import('./pages/Home'));
-const Register = lazy(() => import('./pages/Register'));
-const Login = lazy(() => import('./pages/Login'));
-const ContactsPage = lazy(() => import('./pages/ContactsPage'));
+const Home = lazy(() => import('../pages/Home/Home'));
+const Register = lazy(() => import('../pages/Register'));
+const Login = lazy(() => import('../pages/Login'));
+const ContactsPage = lazy(() => import('../pages/ContactsPage'));
 
 export default function App() {  
   const dispatch = useDispatch();
@@ -30,6 +30,7 @@ export default function App() {
             <Route path="register" element={<PublicRoute><Register /></PublicRoute>} />
             <Route path="login" element={<PublicRoute><Login /></PublicRoute>} />
             <Route path="contacts" element={<PrivateRoute><ContactsPage /></PrivateRoute>} />
+            <Route path="*" element={<PublicRoute><Home /></PublicRoute>} />
           </Route>
         </Routes>       
       </Suspense>
