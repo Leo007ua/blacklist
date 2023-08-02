@@ -23,7 +23,7 @@ export default function App() {
 
   return (   
       <Suspense fallback={<Loader />}> 
-       {/* <Toaster position="top-right"/>        */}
+       <Toaster position="top-right"/>       
         <Routes>
           <Route path="/" element={<NavLayout />}>
             <Route index element={<PublicRoute><Home /></PublicRoute>} />
