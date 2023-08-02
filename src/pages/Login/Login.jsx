@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { HiMiniArrowDownOnSquare} from "react-icons/hi2";
-import { FormStyled, FormWrap } from './RegisterStyled';
+import { FormStyled, FormWrap } from '../Register/RegisterStyled';
 import { useDispatch } from 'react-redux';
 import { logInThunk } from 'redux/Thunks/authThunk';
 import { iconsSize } from 'components/Icon/iconSize';

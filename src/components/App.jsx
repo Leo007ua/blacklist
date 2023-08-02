@@ -10,9 +10,9 @@ import { PrivateRoute } from 'Guards/PrivateRoute';
 import { Toaster } from 'react-hot-toast';
 
 const Home = lazy(() => import('../pages/Home/Home'));
-const Register = lazy(() => import('../pages/Register'));
-const Login = lazy(() => import('../pages/Login'));
-const ContactsPage = lazy(() => import('../pages/ContactsPage'));
+const Register = lazy(() => import('../pages/Register/Register'));
+const Login = lazy(() => import('../pages/Login/Login'));
+const ContactsPage = lazy(() => import('../pages/Contact/ContactsPage'));
 
 export default function App() {  
   const dispatch = useDispatch();
